@@ -4,6 +4,6 @@ import { render } from 'react-dom';
 import data from '../api.json';
 import Home from '../pages/containers/home'
 
-const app = document.getElementById('app')
+const homeContainer = document.getElementById('home-container')
 //const holaMundo = <h1>mundillo cruel</h1>;
-render(<Home data={data} /> , app);
+render(<Home data={data} /> , homeContainer);

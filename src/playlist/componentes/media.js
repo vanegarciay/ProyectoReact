@@ -11,15 +11,15 @@ class Media extends PureComponent {
         //this.handleClick = this.handleClick.bind(this) gracias a ES7 si las funciones se hacen por arrow function no es necesario hacer bind de esa funcion, teniendo configurado previamente en el webpack 'stage-2';
     }
 
-    handleClick = (event) =>{
+    /*handleClick = (event) =>{
         //console.log(this.props.title)
         this.setState({
             author: 'Emmanuel Alonso'
         })
-    }
+    }*/
     render() {
         return(
-            <div className="Media" onClick={this.handleClick}>
+            <div className="Media" onClick={this.props.handleClick}>
                 <div className="Media-cover">
                     <img
                     src={this.props.cover}
