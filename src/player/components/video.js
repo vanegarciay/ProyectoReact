@@ -21,6 +21,8 @@ class Video extends Component {
     const {
         handleLoadedMetadata,
         handleTimeUpdate,
+        handleSeeking,
+        handleSeeked,
     } = this.props;
     return (
       <div className="Video">
@@ -30,6 +32,8 @@ class Video extends Component {
           ref={this.setRef}
           onLoadedMetadata={handleLoadedMetadata}
           onTimeUpdate={handleTimeUpdate}
+          onSeeking={handleSeeking} //evento para validar si se esta deteniendo el vdeo
+          onSeeked={handleSeeked} //evento para validar si se esta detuvo el vdeo
         />
       </div>
     )
